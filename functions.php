@@ -86,6 +86,9 @@ function jeniscores_setup() {
 	//Allow PHP in widgets
 	add_filter( 'widget_text','jeniscores_execute_php_widgets' );
 
+	//Image sizes
+	add_image_size( 'feature-blog', 300, 200, true);
+
 
 }
 endif; // jeniscores_setup
@@ -176,6 +179,41 @@ function jeniscores_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
+	) );
+		register_sidebar( array(
+		'name'          => esc_html__( 'Home Hero', 'jeniscores' ),
+		'id'            => 'home-hero',
+		'description'   => 'Home Hero Area',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+		register_sidebar( array(
+		'name'          => esc_html__( 'Home Optin', 'jeniscores' ),
+		'id'            => 'home-optin',
+		'description'   => 'Home Optin Area',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+		register_sidebar( array(
+		'name'          => esc_html__( 'Home Top', 'jeniscores' ),
+		'id'            => 'home-top',
+		'description'   => 'Home Top Area',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+		register_sidebar( array(
+		'name'          => esc_html__( 'Home Middle', 'jeniscores' ),
+		'id'            => 'home-middle',
+		'description'   => 'Home Middle Area',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+	) );
+		register_sidebar( array(
+		'name'          => esc_html__( 'Home Bottom', 'jeniscores' ),
+		'id'            => 'home-bottom',
+		'description'   => 'Home Bottom Area',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
 	) );
 }
 add_action( 'widgets_init', 'jeniscores_widgets_init' );

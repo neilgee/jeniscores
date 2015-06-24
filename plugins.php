@@ -50,6 +50,16 @@ function jeniscores_register_required_plugins() {
 
         // This is an example of how to include a plugin from the WordPress Plugin Repository.
         array(
+            'name'      => 'Feature A Page Widget',
+            'slug'      => 'feature-a-page-widget',
+            'required'  => false,
+        ),
+        array(
+            'name'      => 'Hide Title',
+            'slug'      => 'hide-title',
+            'required'  => false,
+        ),
+        array(
             'name'      => 'Recent Posts Widget Extended',
             'slug'      => 'recent-posts-widget-extended',
             'required'  => false,

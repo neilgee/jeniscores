@@ -3,7 +3,7 @@ Theme Name: jeniscores
 Theme URI: http://underscores.me/
 Author: Neil Gee
 Author URI: http://wpbeaches.com
-Description: genesis, jeniscores, mashup
+Description: underscores, sample-theme, mashup, starter theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -707,6 +707,29 @@ img.alignright,
 .sticky {
 }
 
+/* Read More */
+
+
+a.more-link, .fpw-read-more-link {
+	display:inline-block;
+	font-size:14px;
+	margin-top:10px;
+	padding:5px 20px;
+	border-radius:4px;
+	color:#fff;
+	background-color:#9c9c9c;
+	border:1px solid #7e7e7e;
+	transition-property: opacity;
+	transition-delay: 0.3s;
+	transition-duration: .5s;
+	
+}
+a.more-link:hover,
+a.fpw-read-more-link:hover {
+	opacity:.6;
+	color:#fff;
+}
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
@@ -757,7 +780,7 @@ img.alignright,
 	display: block;
 }
 
-/*rest of genesis sample css*/
+/*rest of sample theme css*/
 
 /* # Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
@@ -897,7 +920,7 @@ img.alignright,
 	margin: 0 16px 24px 0;
 }
 
-/* ## Genesis
+/* ## Sample Theme
 --------------------------------------------- */
 
 .breadcrumb {
@@ -1090,7 +1113,7 @@ img.alignright,
 	font-size: 20px;
 }
 
-/* ## Genesis eNews Extended
+/* ##  eNews Extended
 --------------------------------------------- */
 
 .enews-widget,
@@ -1611,6 +1634,69 @@ li.comment {
 }
 
 
+
+/* # Home Widgets
+---------------------------------------------------------------------------------------------------- */
+.home-hero-container,
+.home-optin-container,
+.home-top-container,
+.home-middle-container,
+.home-bottom-container {
+	padding: 2%;
+}
+
+
+/* # Recent Posts Widget Extended
+---------------------------------------------------------------------------------------------------- */
+.rpwe_widget .rpwe-block li {
+  border-bottom: none;
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 25px;
+}
+.rpwe_widget .rpwe-thumb {
+  border: none;
+  box-shadow: none!important;
+  margin: 0 auto;
+  padding: 0px !important;
+}
+
+.rpwe_widget .rpwe-block h3 {
+  background: none!important;
+  clear: none;
+  margin-bottom: 10px !important;
+  margin-top: 10px!important;
+  font-weight: 400;
+  font-size: 18px!important;
+  line-height: 1.5em;
+}
+
+.rpwe_widget .rpwe-summary {
+	font-size: 15px;
+}
+
+.rpwe_widget .rpwe-block a {
+	display: inline-block !important;
+}
+
+
+
+/* # Feature a Page Widget
+---------------------------------------------------------------------------------------------------- */
+
+.home .widget_fpw_widget{
+	width: 50%;
+	float: left;
+}
+
+.fpw-excerpt  {
+	font-size: 15px;
+}
+
+
+
+
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1671,7 +1757,6 @@ li.comment {
 	}
 
 	.menu li,
-	.site-header ul.genesis-nav-menu,
 	.site-header .search-form {
 		float: none;
 	}
@@ -1700,6 +1785,16 @@ li.comment {
 
 	.footer-widgets-1 {
 		margin-right: 0;
+	}
+
+	.rpwe_widget .rpwe-block li {
+		width: 100%;
+		float: none;
+	}
+
+	.home .widget_fpw_widget{
+		width: 100%;
+		float: none;
 	}
 
 }
