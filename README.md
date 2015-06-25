@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called Jeniscores.
+A starter theme called **Jeniscores**.
 
 ##Description
 
@@ -59,6 +59,7 @@ This can be overwritten in the `/inc/custom-header.php` file.
 * After Entry
 * Footer 1,2,3
 * Footer
+
 ####Home Page Only
 * Home Hero
 * Home Optin
@@ -71,12 +72,12 @@ Content/Sidebar is default
 
 Optional Full width for Page
 
-Optional Full width for Posts (Needs Single Post Template Plugin activated)
+Optional Full width for Posts (Needs **Single Post Template** Plugin activated)
 
 ##How the Front Page Works
-If no Home widgets are used shows default layout and posts
+If no Home Widgets are used shows default layout and posts
 
-If any Home widgets are used shows Widgets and no sidebar 
+If any Home Widgets are used shows Widgets and full width layout 
 
 ##What Miscellaneous Functions are included
 * Shortcode allowed in Widgets
@@ -86,9 +87,9 @@ If any Home widgets are used shows Widgets and no sidebar
 
 ##What Scripts are included =
 * FontAwesome
-* Dashicons - Commented Out
+* Dashicons - commented Out
 * Google Fonts: Lato
-* Jeniscores CSS stylesheet set to load last
+* Jeniscores CSS stylesheet set to **load** last
 
 ###Changelog ==
 = 1.0 - June 25 2015
