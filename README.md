@@ -4,17 +4,17 @@ Example - [http://themes.wpbeaches.com/jeniscores/] (http://themes.wpbeaches.com
 
 *Contributors: _neilgee, automattic*
 
-Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+- Requires at least: 4.0
+- Tested up to: 4.2.2
+- Stable tag: 1.0.0
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A starter theme called **Jeniscores**.
 
 ##Description
 
-Hi. I'm a starter theme called **Jeniscores**, I am a mash of Genesis Sample Theme and Underscores, I can be used as a parent or you can make a child theme from me
+Hi. I'm a starter theme called **Jeniscores**, I am a mash of Genesis Sample Theme and Underscores, I can be used as a parent or you can make a child theme from me.
 
 
 ##Installation
@@ -47,7 +47,7 @@ The theme will support any non-Genesis plugins and comes with **TGM Plugin Activ
 You can upload a logo/header image via the Customiser, default size 500x250px
 This can be overwritten in the `/inc/custom-header.php` file.
 
-##What menus areas are 
+##What menus areas are included
 * Primary Menu - Header Right
 * Secondary Menu - Below Header
 
