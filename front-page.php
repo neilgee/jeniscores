@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying the front page.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -21,9 +21,11 @@ get_header('home'); ?>
 	</nav>
 	<?php endif; ?>
 
-	<?php
+	<?php //if any Home widgets are used output them and leave off the sidebar
+	if( is_active_sidebar( 'home-hero' ) || is_active_sidebar( 'home-optin' ) || is_active_sidebar( 'home-top' ) || is_active_sidebar( 'home-middle' ) || is_active_sidebar( 'home-bottom' )) : ?>
+	<?php 
 	//check to see if home page widgets are being used and if they are - output them
-	//https://codex.wordpress.org/Function_Reference/dynamic_sidebar
+	//https://codex.wordpress.org/Function_Reference/dynamic_sidebar   
 	if (  is_active_sidebar( 'home-hero' ) ) : ?>
 
 	<div class="home-hero-container">
@@ -87,12 +89,41 @@ get_header('home'); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-				
 
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
 <?php get_footer(); ?>
+
+<?php else : //alternate layout with regular content/sidebar used when no Home widgets are populated ?>
+
+	<div id="content" class="site-content site-inner">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content' ); ?>
+
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+
+
+			<?php endwhile; // End of the loop. ?>
+
+			<?php jeniscores_numeric_posts_nav(); ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+
+<?php endif; ?>

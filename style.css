@@ -1,5 +1,5 @@
 /*
-Theme Name: jeniscores
+Theme Name: Jeniscores
 Theme URI: http://underscores.me/
 Author: Neil Gee
 Author URI: http://wpbeaches.com
@@ -1178,7 +1178,7 @@ img.alignright,
 .title-area {
 	float: left;
 	padding: 10px 0;
-	width: 460px;
+	width: 500px;
 }
 
 .header-full-width .title-area {
@@ -1240,12 +1240,12 @@ img.alignright,
 	width: 100%;
 }
 
-.menu-item {
+.menu li {
 	display: inline-block;
 	text-align: left;
 }
 
-.menu-item  a {
+.menu  a {
 	color: #333;
 	display: block;
 	padding: 30px 24px;
@@ -1257,7 +1257,7 @@ img.alignright,
 	color: #e5554e;
 }
 
-.menu-item .sub-menu {
+.menu .sub-menu {
 	left: -9999px;
 	opacity: 0;
 	position: absolute;
@@ -1761,7 +1761,7 @@ li.comment {
 		float: none;
 	}
 
-	.menu-item,
+	.menu li,
 	.site-description,
 	.site-header .title-area,
 	.site-header .search-form,
@@ -1770,8 +1770,8 @@ li.comment {
 	}
 
 	.menu a,
-	.menu> .first > a,
-	.menu> .last > a {
+	.menu > .first > a,
+	.menu > .last > a {
 		padding: 20px 16px;
 	}
 

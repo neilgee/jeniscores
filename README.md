@@ -1,45 +1,96 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+#Jeniscores
+##A non-Genesis Starter theme based on Underscores and the Sample Theme
+Example - [http://themes.wpbeaches.com/jeniscores/] (http://themes.wpbeaches.com/jeniscores/)
+*Contributors: _neilgee, automattic*
 
-_s
-===
+Requires at least: 4.0
+Tested up to: 4.2.2
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+A starter theme called Jeniscores.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+###Description
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in `functions.php` and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+Hi. I'm a starter theme called Jeniscores, I am a mash of Genesis Sample Theme and Underscores, I can be used as a parent or you can make a child theme from me
 
-Getting Started
----------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+##Installation
+1. Download the zip and rename the folder **jeniscores** and zip again	
+2. In your admin panel, go to Appearance > Themes and click the Add New button.
+3. Click Upload and Choose File, then select the **jeniscores.zip** file. Click Install Now.
+4. Click Activate to use your new theme right away.
+or
+1. Clone me `git clone https://github.com/neilgee/jeniscores.git jeniscores`
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
 
-OR
+##Why do you exist  
+To keep up to daye and in touch with Underscores and the WordPress core themes files without using a *framework* but having the familiarity of the initial style of building from the Genesis Sample Theme.
 
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
+##Does this theme support any plugins?
+The theme will support any non-Genesis plugins and comes with ***TGM Plugin Activation** plugin with a list of some recommended plugins:
 
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+•Feature a Page Widget - *Display Pages in Widget Areas*
+•Recent Posts Widget Extended - *Display Posts in Widget Areas*
+•Single Post Template - *Extend Ability to create custom templates for posts*
+•Simple Social Icons - *Social Icons*
+•Simple Share Buttons Adder - *Social Follow*
+•SlickNav Mobile Menu - *Responsive Mobile Menu*
+•WordPress SEO by Yoast - *SEO*
+•Jetpack by WordPress.com - *Bunch of stuff*
 
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+##Custom Header
+You can upload a logo/header image via the Customiser, default size 500x250px
+This can be overwritten in the `/inc/custom-header.php` file.
 
-Good luck!
+##What Menus areas are 
+-Primary Navigation - Header Right
+-Secondary Menu - Below Header
+
+
+##What Widget areas are included
+####Site Wide
+*Preheader
+*Header Right
+*Sidebar
+*After Entry
+*Footer 1,2,3
+*Footer
+####Home Page Only
+•Home Hero
+•Home Optin
+•Home Top
+•Home Middle
+•Home Bottom
+
+##What layout templates are included
+Content/Sidebar is default
+Optional Full width for Page
+Optional Full width for Posts (Needs Single Post Template Plugin activated)
+
+##How the Front Page Works
+If no Home widgets are used shows default layout and posts
+If any Home widgets are used shows Widgets and no sidebar 
+
+##What Miscellaneous Functions are included
+Shortcode allowed in Widgets
+Comment Title and HTML Attributes Tweaked in Comments
+Post Navigation/Pagination set to numeric
+PHP can run in Widgets
+
+##What Scripts are included =
+*FontAwesome
+*Dashicons - Commented Out
+*Google Fonts: Lato
+*Jeniscores CSS stylesheet set to load last
+
+###Changelog ==
+= 1.0 - June 25 2015
+* Initial release
+
+###Credits
+* Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+* This theme is unsupported and is not in any way accredited with StudioPress.
