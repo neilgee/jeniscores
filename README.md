@@ -18,7 +18,7 @@ Hi. I'm a starter theme called **Jeniscores**, I am a mash of Genesis Sample The
 
 
 ##Installation
-1. Download the zip and rename the folder **jeniscores** and zip again	
+1. Download the zip.	
 2. In your admin panel, go to Appearance > Themes and click the Add New button.
 3. Click Upload and Choose File, then select the **jeniscores.zip** file. Click Install Now.
 4. Click Activate to use your new theme right away.
