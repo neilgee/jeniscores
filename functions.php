@@ -269,7 +269,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * TGM-Plugin-Activation
  */
-require_once  TEMPLATEPATH . '/plugins.php';
+require_once  get_template_directory() . '/plugins.php';
 
 
 //get me some numeric navigation
