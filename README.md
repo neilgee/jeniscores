@@ -14,7 +14,7 @@ A starter theme called **Jeniscores**.
 
 ##Description
 
-Hi. I'm a starter theme called Jeniscores, I am a mash of Genesis Sample Theme and Underscores, I can be used as a parent or you can make a child theme from me
+Hi. I'm a starter theme called **Jeniscores**, I am a mash of Genesis Sample Theme and Underscores, I can be used as a parent or you can make a child theme from me
 
 
 ##Installation
@@ -34,6 +34,7 @@ To keep up to date and in touch with **Underscores** and the WordPress core them
 The theme will support any non-Genesis plugins and comes with **TGM Plugin Activation** plugin with a list of some recommended plugins:
 
 * Feature a Page Widget - *Display Pages in Widget Areas*
+* Hide Title - *Toggles Title on/off*
 * Recent Posts Widget Extended - *Display Posts in Widget Areas*
 * Single Post Template - *Extend Ability to create custom templates for posts*
 * Simple Social Icons - *Social Icons*
@@ -46,7 +47,7 @@ The theme will support any non-Genesis plugins and comes with **TGM Plugin Activ
 You can upload a logo/header image via the Customiser, default size 500x250px
 This can be overwritten in the `/inc/custom-header.php` file.
 
-##What Menus areas are 
+##What menus areas are 
 * Primary Menu - Header Right
 * Secondary Menu - Below Header
 
@@ -70,22 +71,22 @@ This can be overwritten in the `/inc/custom-header.php` file.
 ##What layout templates are included
 Content/Sidebar is default
 
-Optional Full width for Page
+Optional Full width for pages
 
-Optional Full width for Posts (Needs **Single Post Template** Plugin activated)
+Optional Full width for posts (Needs **Single Post Template** Plugin activated)
 
-##How the Front Page Works
+##How the Front Page works
 If no Home Widgets are used shows default layout and posts
 
 If any Home Widgets are used shows Widgets and full width layout 
 
-##What Miscellaneous Functions are included
+##What miscellaneous functions are included
 * Shortcode allowed in Widgets
 * Comment Title and HTML Attributes Tweaked in Comments
 * Post Navigation/Pagination set to numeric
 * PHP can run in Widgets
 
-##What Scripts are included =
+##What scripts are included
 * FontAwesome
 * Dashicons - commented Out
 * Google Fonts: Lato
