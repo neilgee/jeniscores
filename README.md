@@ -92,6 +92,8 @@ If any Home Widgets are used shows Widgets and full width layout
 * Google Fonts: Lato
 * Jeniscores CSS stylesheet set to **load** last
 
+##Example Home Layout
+
 ![alt tag](https://wpbeaches.com/images/jeniscores-home.png)
 
 ###Changelog ==
